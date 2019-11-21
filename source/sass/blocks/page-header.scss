@@ -1,5 +1,5 @@
 .page-header {
-  background: conic-gradient(from 85deg at 16.03% 39.06%, #B80027, #003D85 85deg, #B80027);
+  background: conic-gradient(from 85deg at 16.03% 39.06%, #b80027, #003d85 85deg, #b80027);
   padding-bottom: 51px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .page-header__title {
-  font-family: Bebas Neue;
+  font-family: $Bebas-Neue;
   font-size: 109px;
   line-height: 109px;
   text-align: right;
@@ -107,7 +107,6 @@
   & img {
     display: block;
   }
-
 }
 
 .page-header__social {
@@ -117,9 +116,9 @@
   margin: 0;
 }
 
-@media(max-width: $table-width) {
+@media (max-width: $table-width) {
   .page-header {
-    background: conic-gradient(from 85deg at 20.7% 35.74%, #B80027, #003D85 85deg, #B80027);
+    background: conic-gradient(from 85deg at 20.7% 35.74%, #b80027, #003d85 85deg, #b80027);
     padding-bottom: 82px;
   }
 
@@ -180,9 +179,9 @@
   }
 }
 
-@media(max-width: $mobile-width) {
+@media (max-width: $mobile-width) {
   .page-header {
-    background: conic-gradient(from 85deg at 35.31% 34.22%, #B80027, #003D85 85deg, #B80027);
+    background: conic-gradient(from 85deg at 35.31% 34.22%, #b80027, #003d85 85deg, #b80027);
     padding-bottom: 79px;
   }
 
@@ -234,5 +233,3 @@
     margin-left: 0;
   }
 }
-
-
