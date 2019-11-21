@@ -30,7 +30,7 @@
         <div class="page-header__img">
           <picture>
               <source media="(max-width: 1023px)" srcset="img/header-tablet@1x.jpg 1x, img/header-tablet@2x.jpg 2x">
-            <img src="img/header-desktop@1x.jpg" alt="Фото тренера">
+            <img src="img/header-desktop@1x.jpg" srcset="img/header-desktop@2x.jpg" alt="Фото тренера">
           </picture>
         </div>
         <ul class="page-header__social header-social">
@@ -69,8 +69,38 @@
         </div>
       </div>
     </section>
-    <section class="">
+    <section class="subscription">
+      <div class="container">
+        <div class="subscription__wrapp">
+          <h2 class="subscription__title">Абонементы</h2>
+          <ul class="subscription__duration duration-list">
+            <li class="duration-list__item">1 месяц</li>
+            <li class="duration-list__item">6 месяцев</li>
+            <li class="duration-list__item">12 месяцев</li>
+          </ul>
 
+          <ul class="subscription__options options-list">
+            <li class="options-list__item">
+              <h3 class="options-list__title">С тренером</h3>
+              <p class="options-list__subtitle">12 занятий</p>
+              <p class="options-list__price">5000<span>5000</span></p>
+              <a href="#" class="options-list__btn"></a>
+            </li>
+            <li class="options-list__item">
+              <h3 class="options-list__title">Дневной</h3>
+              <p class="options-list__subtitle">с 8:00 до 17:00</p>
+              <p class="options-list__price">1700<span>1700</span></p>
+              <a href="#" class="options-list__btn"></a>
+            </li>
+            <li class="options-list__item">
+              <h3 class="options-list__title">Полный день</h3>
+              <p class="options-list__subtitle">с 8:00 до 22:00</p>
+              <p class="options-list__price">2700<span>2700</span></p>
+              <a href="#" class="options-list__btn"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 </body>

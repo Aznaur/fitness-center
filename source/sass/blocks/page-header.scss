@@ -102,6 +102,7 @@
 }
 
 .page-header__img {
+  width: 500px;
   margin-right: 6.9%;
 
   & img {
@@ -183,6 +184,10 @@
   .page-header {
     background: conic-gradient(from 85deg at 35.31% 34.22%, #b80027, #003d85 85deg, #b80027);
     padding-bottom: 79px;
+  }
+
+  .page-header__start-home {
+    justify-content: center;
   }
 
   .page-header__top {
