@@ -28,7 +28,10 @@
           <a href="#" class="page-header__btn">Купить абонемент</a>
         </div>
         <div class="page-header__img">
-          <img src="img/header-desktop@1x.jpg" alt="Фото тренера">
+          <picture>
+              <source media="(max-width: 1023px)" srcset="img/header-tablet@1x.jpg 1x, img/header-tablet@2x.jpg 2x">
+            <img src="img/header-desktop@1x.jpg" alt="Фото тренера">
+          </picture>
         </div>
         <ul class="page-header__social header-social">
           <li class="header-social__item">
