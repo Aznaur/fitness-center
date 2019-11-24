@@ -1,11 +1,11 @@
-.header-social {
+.social-head {
   width: 65px;
   min-height: 75px;
   text-align: right;
   margin-bottom: 38px;
 }
 
-.header-social__item {
+.social-head__item {
   margin-bottom: 9px;
 
   &:last-of-type {
@@ -20,5 +20,9 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

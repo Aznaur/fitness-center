@@ -1,0 +1,19 @@
+.wrapp-header {
+  background: conic-gradient(from 85deg at 16.03% 39.06%, #b80027, #003d85 85deg, #b80027);
+  padding-bottom: 51px;
+}
+
+@media (max-width: $table-width) {
+  .wrapp-header {
+    background: conic-gradient(from 85deg at 20.7% 35.74%, #b80027, #003d85 85deg, #b80027);
+    padding-bottom: 82px;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .wrapp-header {
+    background: conic-gradient(from 85deg at 35.31% 34.22%, #b80027, #003d85 85deg, #b80027);
+    padding-bottom: 79px;
+  }
+}
