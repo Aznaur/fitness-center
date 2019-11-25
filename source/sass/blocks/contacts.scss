@@ -1,0 +1,26 @@
+.contacts {
+  width: 50%;
+  background-color: #ffffff;
+  border-top: 1px solid #74819C;
+  box-sizing: border-box;
+  padding-left: 120px;
+  padding-top: 68px;
+}
+
+.contacts__title {
+  width: 410px;
+  font-family: $Bebas-Neue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}

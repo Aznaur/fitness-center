@@ -1,0 +1,17 @@
+.place-time__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.place-time__address {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+
+  & b {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

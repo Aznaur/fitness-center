@@ -1,0 +1,61 @@
+.feedback {
+  background-color: #102654;
+  width: 50%;
+  padding-left: 7.5%;
+  padding-top: 61px;
+  padding-bottom: 69px;
+  box-sizing: border-box;
+
+  & form {
+    width: 410px;
+  }
+}
+
+.feedback__title {
+  width: 410px;
+  font-family: $Bebas-Neue;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.feedback__wrapp-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+
+  & input[type="text"] {
+    width: 190px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #74819C;
+    box-sizing: border-box;
+    height: 30px;
+    color: #ffffff;
+  }
+
+  & input::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.feedback__btn {
+  border: 3px solid #ffffff;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #ffffff;
+}
