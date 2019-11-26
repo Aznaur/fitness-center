@@ -1,7 +1,5 @@
 .feedback {
-  background-color: #102654;
   width: 50%;
-  padding-left: 7.5%;
   padding-top: 61px;
   padding-bottom: 69px;
   box-sizing: border-box;
@@ -12,7 +10,8 @@
 }
 
 .feedback__title {
-  width: 410px;
+  width: 370px;
+  word-break: break-word;
   font-family: $Bebas-Neue;
   font-size: 49px;
   line-height: 64px;
