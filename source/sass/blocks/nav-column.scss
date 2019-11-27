@@ -32,3 +32,39 @@
     margin-right: 42px;
   }
 }
+
+@media (max-width: $table-width) {
+  .nav-column__item {
+    margin-right: 30px;
+  }
+
+  .nav-column {
+
+    &:first-of-type {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .nav-column__list {
+    display: block;
+  }
+
+  .nav-column__item {
+    margin-right: 0;
+    margin-bottom: 17px;
+
+    & a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 19px;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+    }
+  }
+}

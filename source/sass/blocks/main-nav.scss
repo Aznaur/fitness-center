@@ -10,3 +10,23 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media (max-width: $table-width) {
+  .main-nav {
+    width: 391px;
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav {
+    width: 82%;
+    padding-left: 0;
+    margin-bottom: 19px;
+  }
+
+  .main-nav__list {
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}

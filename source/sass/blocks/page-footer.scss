@@ -28,3 +28,35 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: $table-width) {
+  .page-footer__wrapp {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__logo {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__wrapp {
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 45px;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    top: 48px;
+  }
+}

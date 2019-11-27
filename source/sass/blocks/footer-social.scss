@@ -2,13 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   width: 110px;
+  flex-shrink: 0;
 }
 
 .footer-social__item {
   margin-right: 25px;
+  width: 24px;
+  height: 24px;
 
   &:last-of-type {
     margin-right: 0;
+    width: 12px;
   }
 
   &:first-of-type {
@@ -17,9 +21,35 @@
 }
 
 .footer-social__link {
-  display: flex;
+  display: block;
 
   &:hover svg {
     opacity: 0.7;
+  }
+}
+
+@media (max-width: $table-width) {
+  .footer-social {
+    width: 100px;
+  }
+
+  .footer-social__item {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-social {
+    width: 150px;
+  }
+
+  .footer-social__item {
+    margin-right: 40px;
+    width: 27px;
+    height: 27px;
+
+    &:last-of-type {
+      width: 14px;
+    }
   }
 }
