@@ -26,3 +26,49 @@
   display: flex;
   padding-left: 5px;
 }
+
+@media (max-width: $table-width) {
+  .contacts {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 58px;
+    padding-left: 133px;
+    padding-right: 180px;
+  }
+
+  .contacts__title {
+    width: 100%;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 33px;
+  }
+
+  .contacts__list {
+    width: 100%;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    padding-top: 68px;
+    padding-bottom: 58px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 36px;
+  }
+
+  .contacts__list {
+    flex-wrap: wrap;
+  }
+}

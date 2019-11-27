@@ -23,6 +23,38 @@
   }
 }
 
-.connection__tel {
-  margin-bottom: 17px;
+.connection__item {
+
+  &:first-of-type {
+    margin-bottom: 16px;
+  }
 }
+
+@media (max-width: $table-width) {
+  .connection__tel,
+  .connection__mail {
+    font-size: 18px;
+    line-height: 37px;
+    margin: 0;
+    width: 116px;
+    text-decoration: none;
+    color:#102654;
+    display: flex;
+    flex-wrap: wrap;
+
+    & b {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .connection__mail {
+    width: 142px;
+  }
+
+  .connection__list {
+    padding: 0;
+  }
+}
+

@@ -1,0 +1,34 @@
+.nav-column__item {
+  margin-right: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.7;
+    }
+  }
+}
+
+.nav-column__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-column {
+
+  &:first-of-type {
+    margin-right: 42px;
+  }
+}
