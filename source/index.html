@@ -181,7 +181,11 @@
             </div>
           </div>
           <div class="news-event__img">
-            <img src="img/crossfit-desktop@1x.jpg" alt="Фото кросфит">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/crossfit-mobile@1x.jpg 1x, img/crossfit-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/crossfit-tablet@1x.jpg 1x, img/crossfit-tablet@2x.jpg 2x">
+              <img src="img/crossfit-desktop@1x.jpg" srcset="img/crossfit-desktop@2x.jpg" alt="Фото кросфит">
+            </picture>
           </div>
         </div>
       </div>

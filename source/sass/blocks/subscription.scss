@@ -54,7 +54,7 @@
 @media (max-width: $table-width) {
   .subscription {
     padding-top: 97px;
-    padding-bottom: 64px;
+    padding-bottom: 68px;
 
     &::after {
       content: "";
@@ -103,5 +103,4 @@
     width: 100%;
     margin-bottom: 34px;
   }
-
 }
