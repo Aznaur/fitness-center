@@ -1,0 +1,68 @@
+.date-event {
+  margin-bottom: 10px;
+}
+
+.date-event__title {
+  word-break: break-word;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.date-event__number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 64px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    top: 6px;
+    left: -2px;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  & p:first-of-type {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+
+  & p:last-of-type {
+    width: 37px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: $table-width) {
+  .date-event__title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .date-event__number {
+    width: 42px;
+
+    & p:first-of-type {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    & p:last-of-type {
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+
+}
