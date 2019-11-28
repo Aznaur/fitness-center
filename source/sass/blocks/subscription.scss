@@ -77,3 +77,31 @@
     margin-bottom: 44px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .subscription {
+    padding-top: 66px;
+    padding-bottom: 70px;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      right: 0;
+      bottom: 0;
+      background-image: none;
+    }
+  }
+
+  .subscription__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  .subscription__duration {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+}
