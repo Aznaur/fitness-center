@@ -19,15 +19,38 @@
     });
   }
 
-  var width = 300; // ширина картинки
+  var marginRightItem = 40;
+  var width = document.querySelector('.trainers__item').offsetWidth + marginRightItem; // ширина картинки
   var count = 4; // видимое количество изображений
   var list = document.querySelector('.trainers__list');
   var listElems = document.querySelectorAll('.trainers__item');
 
   var position = 0; // положение ленты прокрутки
 
-  if (window.innerWidth <= 1024) {
+  if (window.innerWidth < 1024) {
+    marginRightItem = 30;
+    width = document.querySelector('.trainers__item').offsetWidth + marginRightItem;
     count = 2;
+    document.querySelector('.trainers__arrow--prev').onclick = function () {
+      // сдвиг влево
+      position += width * count;
+      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+      position = Math.min(position, 0);
+      list.style.marginLeft = position + 'px';
+    };
+
+    document.querySelector('.trainers__arrow--next').onclick = function () {
+      // сдвиг вправо
+      position -= width * count;
+      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+      position = Math.max(position, -width * (listElems.length - count));
+      list.style.marginLeft = position + 'px';
+    };
+  }
+  if (window.innerWidth < 768) {
+    marginRightItem = 30;
+    width = 226 + marginRightItem;
+    count = 1;
     document.querySelector('.trainers__arrow--prev').onclick = function () {
       // сдвиг влево
       position += width * count;
