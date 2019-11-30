@@ -1,0 +1,93 @@
+.stocks {
+  padding-top: 119px;
+  padding-bottom: 60px;
+}
+
+.stocks__title {
+  font-family: $Bebas-Neue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 52px;
+}
+
+.stocks__best {
+  width: 580px;
+}
+
+.stocks__container {
+  margin-left: 10px;
+  width: 48.276%;
+}
+
+.stocks__friend {
+  width: 100%;
+}
+
+.stocks__discount {
+  width: 100%;
+}
+
+.stocks__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $table-width) {
+  .stocks {
+    padding-top: 99px;
+  }
+
+  .stocks__wrapp {
+    flex-wrap: wrap;
+  }
+
+  .stocks__best {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .stocks__title {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 42px;
+  }
+
+  .stocks__container {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stocks__friend {
+    width: 47.789%;
+  }
+
+  .stocks__discount {
+    width: 47.789%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .stocks {
+    padding-top: 70px;
+  }
+
+  .stocks__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .stocks__container {
+    flex-wrap: wrap;
+  }
+
+  .stocks__friend,
+  .stocks__discount {
+    text-align: center;
+    width: 100%;
+  }
+}

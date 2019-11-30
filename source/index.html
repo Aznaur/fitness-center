@@ -383,23 +383,34 @@
         <div class="stocks__wrapp">
           <div class="stocks__best best-deal">
             <div class="best-deal__text">
-              <p class="best-deal__slogan">Год<b>4999</b></p>
+              <p class="best-deal__slogan">Год<b> 4999</b></p>
               <p class="best-deal__desc">Безлимитный абонемент в тренажерный зал</p>
               <a href="#" class="best-deal__link">подробнее</a>
             </div>
             <div class="best-deal__img">
-              <img src="img/stocks-desktop@1x.jpg" alt="Фото тренера">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/stocks-mobile@1x.jpg 1x, img/stocks-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/stocks-tablet@1x.jpg 1x, img/stocks-tablet@2x.jpg 2x">
+                <img src="img/stocks-desktop@1x.jpg" srcset="img/stocks-desktop@2x.jpg 2x" alt="Фото тренера">
+              </picture>
+
             </div>
           </div>
-          <div class="stocks__friend take-friend">
-            <p class="take-friend__slogan">Месяц бесплатно</p>
-            <p class="take-friend__desc">Приведи друга, получи абонемент в подарок</p>
-            <a href="#" class="take-friend__link">подробнее</a>
-          </div>
-          <div class="stocks__discount corporate-discount">
-              <p class="corporate-discount__slogan">Скидка 20%</p>
-              <p class="corporate-discount__desc">Корпоративный фитнес с командой</p>
-              <a href="#" class="corporate-discount__link">подробнее</a>
+          <div class="stocks__container">
+            <div class="stocks__friend take-friend">
+              <div class="take-friend__wrapp">
+                <p class="take-friend__slogan">Месяц бесплатно</p>
+                <p class="take-friend__desc">Приведи друга, получи абонемент в подарок</p>
+                <a href="#" class="take-friend__link">подробнее</a>
+              </div>
+            </div>
+            <div class="stocks__discount corporate-discount">
+              <div class="corporate-discount__wrapp">
+                <p class="corporate-discount__slogan">Скидка 20%</p>
+                <p class="corporate-discount__desc">Корпоративный фитнес с&nbsp;командой</p>
+                <a href="#" class="corporate-discount__link">подробнее</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

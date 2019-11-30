@@ -1,0 +1,53 @@
+.corporate-discount {
+  box-sizing: border-box;
+  padding: 7px;
+  background: linear-gradient(135deg, #D10A42 0%, #00359F 100%);
+}
+
+.corporate-discount__wrapp {
+  padding: 27px;
+  padding-right: 15px;
+  background-color: #ffffff;
+}
+
+.corporate-discount__slogan {
+  margin: 0;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.corporate-discount__desc {
+  margin: 0;
+  margin-bottom: 74px;
+}
+
+.corporate-discount__link {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1C3374;
+  display: block;
+}
+
+@media (max-width: $mobile-width) {
+  .corporate-discount {
+    margin-bottom: 30px;
+  }
+
+  .corporate-discount__wrapp {
+    padding-top: 37px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 41px;
+  }
+
+  .corporate-discount__desc {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+}
