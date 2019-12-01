@@ -84,4 +84,38 @@
     };
   }
 
+  var reviewsWidth = 660;
+  var reviewsCount = 1;
+
+  var reviewsList = document.querySelector('.reviews__list ');
+  var reviewsListElems = document.querySelectorAll('.reviews__item');
+  var reviewsPosition = 0;
+
+  if (window.innerWidth < 768) {
+    reviewsWidth = 320;
+    document.querySelector('.reviews__arrow--prev').onclick = function() {
+      reviewsPosition += reviewsWidth * reviewsCount;
+      reviewsPosition = Math.min(reviewsPosition, 0)
+      reviewsList.style.marginLeft = reviewsPosition + 'px';
+    };
+
+    document.querySelector('.reviews__arrow--next').onclick = function() {
+      reviewsPosition -= reviewsWidth * reviewsCount;
+      reviewsPosition = Math.max(reviewsPosition, -reviewsWidth * (reviewsListElems.length - reviewsCount));
+      reviewsList.style.marginLeft = reviewsPosition + 'px';
+    };
+  } else {
+    document.querySelector('.reviews__arrow--prev').onclick = function() {
+      reviewsPosition += reviewsWidth * reviewsCount;
+      reviewsPosition = Math.min(reviewsPosition, 0)
+      reviewsList.style.marginLeft = reviewsPosition + 'px';
+    };
+
+    document.querySelector('.reviews__arrow--next').onclick = function() {
+      reviewsPosition -= reviewsWidth * reviewsCount;
+      reviewsPosition = Math.max(reviewsPosition, -reviewsWidth * (reviewsListElems.length - reviewsCount));
+      reviewsList.style.marginLeft = reviewsPosition + 'px';
+    };
+  }
+
 })();
