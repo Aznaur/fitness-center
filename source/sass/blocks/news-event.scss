@@ -8,12 +8,23 @@
 }
 
 .news-event__text {
-  width: 43%;
+  width: 100%;
   background-color: #ed0233;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 86px;
+  padding-bottom: 86px;
+  padding-left: 78px;
+  background-image: url("../img/crossfit-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 660px 500px;
+  background-position: 500px 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/crossfit-desktop@2x.jpg");
+  }
 }
 
 .news-event__text-wrapp {
@@ -22,6 +33,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
+  margin-right: auto;
 }
 
 .news-event__img {
@@ -79,6 +91,20 @@
     padding-top: 100px;
   }
 
+  .news-event__text {
+    background-image: url("../img/crossfit-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 386px 292px;
+    background-position: 100% 0;
+    padding-top: 49px;
+    padding-bottom: 56px;
+    padding-left: 45px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/crossfit-tablet@2x.jpg");
+    }
+  }
+
   .news-event__text-wrapp {
     width: 202px;
   }
@@ -114,14 +140,22 @@
     padding-top: 38px;
   }
 
-  .news-event__wrapp {
-    flex-wrap: wrap;
-  }
-
   .news-event__text {
     width: 100%;
     padding-top: 51px;
     padding-bottom: 53px;
+
+    background-image: url("../img/crossfit-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 290px 292px;
+    background-position: 100% 292px;
+    padding-top: 49px;
+    padding-bottom: 347px;
+    padding-left: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/crossfit-mobile@2x.jpg");
+    }
   }
 
   .news-event__img {
@@ -130,5 +164,6 @@
 
   .news-event__text-wrapp {
     width: 70%;
+    margin-right: 0;
   }
 }
