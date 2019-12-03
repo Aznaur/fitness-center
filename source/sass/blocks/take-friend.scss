@@ -1,7 +1,7 @@
 .take-friend {
   box-sizing: border-box;
   padding: 7px;
-  background: linear-gradient(135deg, #D10A42 0%, #00359F 100%);
+  background: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
   margin-bottom: 40px;
 }
 
@@ -31,7 +31,7 @@
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1C3374;
+  color: #1c3374;
   display: block;
 }
 
@@ -47,7 +47,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .take-friend {
     margin-bottom: 30px;
   }
@@ -64,5 +63,3 @@
     margin-bottom: 26px;
   }
 }
-
-

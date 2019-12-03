@@ -12,7 +12,7 @@
   margin: 0;
   width: 110px;
   text-decoration: none;
-  color:#102654;
+  color: #102654;
   display: flex;
   flex-wrap: wrap;
 
@@ -24,7 +24,6 @@
 }
 
 .connection__item {
-
   &:first-of-type {
     margin-bottom: 16px;
   }
@@ -38,7 +37,7 @@
     margin: 0;
     width: 116px;
     text-decoration: none;
-    color:#102654;
+    color: #102654;
     display: flex;
     flex-wrap: wrap;
 
@@ -57,4 +56,3 @@
     padding: 0;
   }
 }
-

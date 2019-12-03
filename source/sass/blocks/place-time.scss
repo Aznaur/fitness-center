@@ -7,7 +7,7 @@
     position: absolute;
     width: 1px;
     height: 102px;
-    background-color: #74819C;
+    background-color: #74819c;
     right: -1px;
     top: 6px;
   }
@@ -34,7 +34,6 @@
 }
 
 .place-time__item {
-
   &:first-of-type {
     margin-bottom: 16px;
   }
@@ -61,7 +60,6 @@
   }
 
   .place-time {
-
     &::before {
       content: "";
       width: 1px;
@@ -85,4 +83,3 @@
     }
   }
 }
-

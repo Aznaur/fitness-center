@@ -16,7 +16,7 @@
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 31px;
 }
@@ -30,7 +30,7 @@
     width: 190px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #74819C;
+    border-bottom: 1px solid #74819c;
     box-sizing: border-box;
     height: 30px;
     color: #ffffff;
@@ -70,7 +70,7 @@
 
     & form {
       width: 100%;
-      box-sizing: border-box;;
+      box-sizing: border-box;
     }
   }
 
@@ -104,9 +104,7 @@
   .feedback__wrapp-input {
     flex-wrap: wrap;
     margin-bottom: 39px;
-  }
 
-  .feedback__wrapp-input {
     & input[type="text"] {
       width: 100%;
     }

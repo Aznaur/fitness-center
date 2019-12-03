@@ -1,7 +1,7 @@
 .advantages {
   padding-top: 119px;
   padding-bottom: 116px;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 
 .advantages__title {
@@ -39,7 +39,6 @@
 }
 
 .advantages__number {
-
   & p {
     margin: 0;
   }
@@ -55,12 +54,6 @@
     font-size: 14px;
     line-height: 21px;
   }
-
-}
-
-.advantages__item--square,
-.advantages__item--comfort {
-  padding-left: 30px;
 }
 
 .advantages__item--square {
@@ -93,9 +86,9 @@
 
 .advantages__item--square,
 .advantages__item--comfort {
+  padding-left: 30px;
 
   & .advantages__text {
-
     & p:last-of-type {
       width: 185px;
       font-weight: 300;
@@ -112,7 +105,6 @@
 
 .advantages__item--comfort {
   padding-top: 75px;
-
 }
 
 .advantages__item--experience {
@@ -120,7 +112,6 @@
 }
 
 .advantages__text {
-
   & p:first-of-type {
     font-weight: bold;
     font-size: 22px;
@@ -140,10 +131,6 @@
 .advantages__item--parking,
 .advantages__item--experience {
   padding-left: 64px;
-
-  .advantages__text {
-    width: 230px;
-  }
 
   & .advantages__number {
     margin-left: 0;
@@ -168,7 +155,7 @@
   transform: translate(-50%, -50%);
   width: 240px;
   min-height: 307px;
-  background-color: #1C3374;
+  background-color: #1c3374;
   color: #ffffff;
   padding: 62px 34px 40px 34px;
   box-sizing: border-box;
@@ -218,7 +205,6 @@
   }
 
   .advantages__number {
-
     & p {
       margin: 0;
     }
@@ -239,6 +225,7 @@
   .advantages__item--square,
   .advantages__item--parking {
     margin-bottom: 169px;
+
     &::before {
       content: none;
     }
@@ -246,12 +233,11 @@
 
   .advantages__item--parking,
   .advantages__item--experience {
+    padding-left: 15px;
 
     .advantages__text {
       width: 230px;
     }
-
-    padding-left: 15px;
 
     & .advantages__number {
       margin-left: 0;
@@ -264,7 +250,6 @@
   }
 
   .advantages__text {
-
     & p:first-of-type {
       font-size: 20px;
       line-height: 30px;
@@ -321,6 +306,7 @@
     width: 230px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 36px;
 
     & .advantages__number {
       margin-right: 0;
@@ -343,10 +329,6 @@
     & p:first-of-type {
       margin-bottom: 2px;
     }
-  }
-
-  .advantages__item {
-    margin-bottom: 36px;
   }
 
   .advantages__best {

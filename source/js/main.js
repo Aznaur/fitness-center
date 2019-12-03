@@ -93,25 +93,25 @@
 
   if (window.innerWidth < 768) {
     reviewsWidth = 320;
-    document.querySelector('.reviews__arrow--prev').onclick = function() {
+    document.querySelector('.reviews__arrow--prev').onclick = function () {
       reviewsPosition += reviewsWidth * reviewsCount;
-      reviewsPosition = Math.min(reviewsPosition, 0)
+      reviewsPosition = Math.min(reviewsPosition, 0);
       reviewsList.style.marginLeft = reviewsPosition + 'px';
     };
 
-    document.querySelector('.reviews__arrow--next').onclick = function() {
+    document.querySelector('.reviews__arrow--next').onclick = function () {
       reviewsPosition -= reviewsWidth * reviewsCount;
       reviewsPosition = Math.max(reviewsPosition, -reviewsWidth * (reviewsListElems.length - reviewsCount));
       reviewsList.style.marginLeft = reviewsPosition + 'px';
     };
   } else {
-    document.querySelector('.reviews__arrow--prev').onclick = function() {
+    document.querySelector('.reviews__arrow--prev').onclick = function () {
       reviewsPosition += reviewsWidth * reviewsCount;
-      reviewsPosition = Math.min(reviewsPosition, 0)
+      reviewsPosition = Math.min(reviewsPosition, 0);
       reviewsList.style.marginLeft = reviewsPosition + 'px';
     };
 
-    document.querySelector('.reviews__arrow--next').onclick = function() {
+    document.querySelector('.reviews__arrow--next').onclick = function () {
       reviewsPosition -= reviewsWidth * reviewsCount;
       reviewsPosition = Math.max(reviewsPosition, -reviewsWidth * (reviewsListElems.length - reviewsCount));
       reviewsList.style.marginLeft = reviewsPosition + 'px';

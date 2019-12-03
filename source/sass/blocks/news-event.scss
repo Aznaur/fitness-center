@@ -9,7 +9,7 @@
 
 .news-event__text {
   width: 43%;
-  background-color: #ED0233;
+  background-color: #ed0233;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .news-event__date {
@@ -71,7 +71,7 @@
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  border: 4px solid #FFFFFF;
+  border: 4px solid #ffffff;
 }
 
 @media (max-width: $table-width) {
@@ -105,7 +105,7 @@
     line-height: 12px;
     padding-top: 16px;
     padding-bottom: 9px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff;
   }
 }
 
