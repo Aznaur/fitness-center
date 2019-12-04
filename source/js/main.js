@@ -84,7 +84,7 @@
     };
   }
 
-  var reviewsWidth = 660;
+  var reviewsWidth = 700;
   var reviewsCount = 1;
 
   var reviewsList = document.querySelector('.reviews__list ');

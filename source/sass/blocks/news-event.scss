@@ -13,13 +13,13 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 86px;
-  padding-bottom: 86px;
+  padding-bottom: 83px;
   padding-left: 78px;
   background-image: url("../img/crossfit-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 660px 500px;
+  background-size: 660px 100%;
   background-position: 500px 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -88,13 +88,13 @@
 
 @media (max-width: $table-width) {
   .news-event {
-    padding-top: 100px;
+    padding-top: 95px;
   }
 
   .news-event__text {
     background-image: url("../img/crossfit-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 386px 292px;
+    background-size: 386px 100%;
     background-position: 100% 0;
     padding-top: 49px;
     padding-bottom: 56px;
@@ -148,7 +148,7 @@
     background-image: url("../img/crossfit-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 290px 292px;
-    background-position: 100% 292px;
+    background-position: center bottom;
     padding-top: 49px;
     padding-bottom: 347px;
     padding-left: 0;

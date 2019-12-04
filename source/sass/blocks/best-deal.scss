@@ -9,18 +9,9 @@
   padding-bottom: 46px;
   padding-left: 45px;
   box-sizing: border-box;
-  background-color: #ed0233;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-}
-
-.best-deal__img {
-  width: 280px;
-
-  & img {
-    display: block;
-  }
 }
 
 .best-deal__slogan {
@@ -59,10 +50,6 @@
     width: 41%;
   }
 
-  .best-deal__img {
-    width: 59%;
-  }
-
   .best-deal__slogan {
     width: 142px;
   }
@@ -75,12 +62,9 @@
 
   .best-deal__text {
     width: 100%;
+    min-height: 290px;
     text-align: center;
     padding-right: 45px;
-  }
-
-  .best-deal__img {
-    width: 100%;
   }
 
   .best-deal__slogan {

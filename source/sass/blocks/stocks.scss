@@ -14,7 +14,17 @@
 }
 
 .stocks__best {
-  width: 580px;
+  width: 560px;
+
+  background-color: #ed0233;
+  background-image: url('../img/stocks-desktop@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 280px 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/stocks-desktop@2x.jpg");
+  }
 }
 
 .stocks__container {
@@ -46,7 +56,16 @@
 
   .stocks__best {
     width: 100%;
+    min-height: 460px;
     margin-bottom: 30px;
+
+    background-image: url('../img/stocks-tablet@1x.jpg');
+    background-position: 100% 0;
+    background-size: 399px 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/stocks-tablet@2x.jpg");
+    }
   }
 
   .stocks__title {
@@ -75,6 +94,18 @@
   .stocks {
     padding-top: 70px;
     padding-bottom: 20px;
+  }
+
+  .stocks__best {
+    min-height: 598px;
+    align-items: flex-start;
+    background-image: url('../img/stocks-mobile@1x.jpg');
+    background-position: center bottom;
+    background-size: 290px 299px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/stocks-mobile@2x.jpg");
+    }
   }
 
   .stocks__title {
