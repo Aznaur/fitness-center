@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Фитнес центр Supergym</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font">
+  <link rel="preload" href="fonts/bebasneuelight.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -55,9 +61,9 @@
 
         <div class="gym__img">
           <picture>
-            <source media="(max-width: 767px)" srcset="img/gym-mobile@1x.jpg 1x, img/gym-mobile@2x.jpg 2x">
-            <source media="(max-width: 1023px)" srcset="img/gym-tablet@1x.jpg 1x, img/gym-tablet@2x.jpg 2x">
-            <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg" alt="Фото тренажерного зала">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
+            <img src="img/gym-desktop@1x.webp" srcset="img/gym-desktop@2x.webp" alt="Фото тренажерного зала">
           </picture>
 
         </div>
@@ -80,9 +86,9 @@
             </svg>
           </a>
           <picture>
-            <source media="(max-width: 767px)" srcset="img/video-gym-mobile@1x.jpg 1x, img/video-gym-mobile@2x.jpg 2x">
-            <source media="(max-width: 1023px)" srcset="img/video-gym-tablet@1x.jpg 1x, img/video-gym-tablet@2x.jpg 2x">
-            <img src="img/video-gym-desktop@1x.jpg" srcset="img/video-gym-desktop@2x.jpg" alt="Видео тренажерного зала">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/video-gym-mobile@1x.webp 1x, img/video-gym-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-gym-tablet@1x.webp 1x, img/video-gym-tablet@2x.webp 2x">
+            <img src="img/video-gym-desktop@1x.webp" srcset="img/video-gym-desktop@2x.webp" alt="Видео тренажерного зала">
           </picture>
 
         </div>
@@ -175,7 +181,7 @@
 
     <section class="trainers">
         <h2 class="trainers__title">Тренеры</h2>
-        <button  type="button" class="trainers__arrow trainers__arrow--prev">
+        <button  type="button" class="trainers__arrow trainers__arrow--prev" aria-label="Кнопка влево">
           <svg viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
           </svg>
@@ -183,7 +189,10 @@
         <div class="trainers__slider">
           <ul class="trainers__list">
             <li class="trainers__item trainers__item-1">
-              <img src="img/trainer1-desktop@1x.jpg" alt="Фото тренера Анны Павловны">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer1-desktop@1x.webp">
+                <img src="img/trainer1-desktop@1x.jpg" srcset="img/trainer1-desktop@2x.jpg" alt="Фото тренера Анны Павловны">
+              </picture>
               <p class="trainers__name">Анна Павлова <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-1">
                 <li class="merit-list__item">Certified Level 3 Trainer</li>
@@ -192,7 +201,10 @@
               </ul>
             </li>
             <li class="trainers__item trainers__item-2">
-              <img src="img/trainer2-desktop@1x.jpg" alt="Фото тренера Алексея Лаврова">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer2-desktop@1x.webp">
+                <img src="img/trainer2-desktop@1x.jpg" alt="Фото тренера Алексея Лаврова">
+              </picture>
               <p class="trainers__name">Алексей Лавров <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-2">
                 <li class="merit-list__item ">Certified Level 3 Trainer</li>
@@ -201,7 +213,10 @@
               </ul>
             </li>
             <li class="trainers__item trainers__item-3">
-              <img src="img/trainer3-desktop@1x.jpg" alt="Фото тренера Александра Пашкова">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer3-desktop@1x.webp">
+                <img src="img/trainer3-desktop@1x.jpg" alt="Фото тренера Александра Пашкова">
+              </picture>
               <p class="trainers__name">Александр&nbsp;Пашков <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-3">
                 <li class="merit-list__item ">Certified Level 3 Trainer</li>
@@ -210,7 +225,10 @@
               </ul>
             </li>
             <li class="trainers__item trainers__item-4">
-              <img src="img/trainer4-desktop@1x.jpg" alt="Фото тренера Марии Кетовой">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer4-desktop@1x.webp">
+                <img src="img/trainer4-desktop@1x.jpg" alt="Фото тренера Марии Кетовой">
+              </picture>
               <p class="trainers__name">Мария Кетова <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-4">
                 <li class="merit-list__item ">Certified Level 3 Trainer</li>
@@ -219,7 +237,10 @@
               </ul>
             </li>
             <li class="trainers__item trainers__item-5">
-              <img src="img/trainer1-desktop@1x.jpg" alt="Фото тренера Анны Павловны">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer1-desktop@1x.webp">
+                <img src="img/trainer1-desktop@1x.jpg" alt="Фото тренера Анны Павловны">
+              </picture>
               <p class="trainers__name">Анна Павлова <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-5">
                 <li class="merit-list__item ">Certified Level 3 Trainer</li>
@@ -228,7 +249,10 @@
               </ul>
             </li>
             <li class="trainers__item trainers__item-6">
-              <img src="img/trainer2-desktop@1x.jpg" alt="Фото тренера Алексея Лаврова">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer2-desktop@1x.webp">
+                <img src="img/trainer2-desktop@1x.jpg" alt="Фото тренера Алексея Лаврова">
+              </picture>
               <p class="trainers__name">Алексей Лавров <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-6">
                 <li class="merit-list__item ">Certified Level 3 Trainer</li>
@@ -237,7 +261,10 @@
               </ul>
             </li>
             <li class="trainers__item trainers__item-7">
-              <img src="img/trainer3-desktop@1x.jpg" alt="Фото тренера Александра Пашкова">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer3-desktop@1x.webp">
+                <img src="img/trainer3-desktop@1x.jpg" alt="Фото тренера Александра Пашкова">
+              </picture>
               <p class="trainers__name">Александр Пашков <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-7">
                 <li class="merit-list__item ">Certified Level 3 Trainer</li>
@@ -246,7 +273,10 @@
               </ul>
             </li>
             <li class="trainers__item trainers__item-8">
-              <img src="img/trainer4-desktop@1x.jpg" alt="Фото тренера Марии Кетовой">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer4-desktop@1x.webp">
+                <img src="img/trainer4-desktop@1x.jpg" alt="Фото тренера Марии Кетовой">
+              </picture>
               <p class="trainers__name">Мария Кетова <span>CrossFit</span></p>
               <ul class="merit-list merit-list--trainer-8">
                 <li class="merit-list__item ">Certified Level 3 Trainer</li>
@@ -256,7 +286,7 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="trainers__arrow trainers__arrow--next">
+        <button type="button" class="trainers__arrow trainers__arrow--next" aria-label="Кнопка вправо">
           <svg viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L17 17L1 33" stroke="#AFAFAF"/>
           </svg>
@@ -377,7 +407,7 @@
     </section>
 
     <section class="reviews">
-      <button type="button" class="reviews__arrow reviews__arrow--prev">
+      <button type="button" class="reviews__arrow reviews__arrow--prev" aria-label="Кнопка влево">
         <svg viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
         </svg>
@@ -388,8 +418,8 @@
           <li class="reviews__item">
             <div class="reviews__img">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/review-mobile@1x.png 1x, img/review-mobile@2x.png 2x">
-                <img src="img/review-desktop@1x.png" srcset="img/review-desktop@2x.png" alt="Фото автора">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/review-mobile@1x.webp 1x, img/review-mobile@2x.webp 2x">
+                <img src="img/review-desktop@1x.webp" srcset="img/review-desktop@2x.webp" alt="Фото автора">
               </picture>
             </div>
             <div class="reviews__desc">
@@ -408,7 +438,7 @@
             </li>
         </ul>
       </div>
-      <button type="button" class="reviews__arrow reviews__arrow--next">
+      <button type="button" class="reviews__arrow reviews__arrow--next" aria-label="Кнопка вправо">
         <svg viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1L17 17L1 33" stroke="#AFAFAF"/>
         </svg>
