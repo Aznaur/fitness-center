@@ -1,16 +1,28 @@
 .wrapp-header {
-  background: conic-gradient(from 85deg at 16.03% 39.06%, #b80027, #003d85 85deg, #b80027);
+  background-image: url("../img/bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  // background: conic-gradient(from 85deg at 16.03% 39.06%, #b80027, #003d85 85deg, #b80027);
 }
 
 @media (max-width: $table-width) {
   .wrapp-header {
-    background: conic-gradient(from 85deg at 20.7% 35.74%, #b80027, #003d85 85deg, #b80027);
+    background-image: url("../img/bg-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    // background: conic-gradient(from 85deg at 20.7% 35.74%, #b80027, #003d85 85deg, #b80027);
   }
 }
 
 
 @media (max-width: $mobile-width) {
   .wrapp-header {
-    background: conic-gradient(from 85deg at 35.31% 34.22%, #b80027, #003d85 85deg, #b80027);
+    background-image: url("../img/bg-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    // background: conic-gradient(from 85deg at 35.31% 34.22%, #b80027, #003d85 85deg, #b80027);
   }
 }

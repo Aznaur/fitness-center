@@ -11,8 +11,6 @@
   <link rel="preload" href="fonts/bebasneueregular.woff2" as="font">
   <link rel="preload" href="fonts/bebasneuelight.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script src="js/conic-gradient.js"></script>
 </head>
 <body>
 <div style="display: none">
@@ -67,7 +65,11 @@
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
-            <img src="img/gym-desktop@1x.webp" srcset="img/gym-desktop@2x.webp" alt="Фото тренажерного зала">
+            <source type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/gym-mobile@1x.jpg 1x, img/gym-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/gym-tablet@1x.jpg 1x, img/gym-tablet@2x.jpg 2x">
+            <img src="img/gym-desktop@1x.jpg" srcset="img/gym-desktop@2x.jpg" alt="Фото тренажерного зала">
           </picture>
 
         </div>
@@ -92,7 +94,11 @@
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/video-gym-mobile@1x.webp 1x, img/video-gym-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-gym-tablet@1x.webp 1x, img/video-gym-tablet@2x.webp 2x">
-            <img src="img/video-gym-desktop@1x.webp" srcset="img/video-gym-desktop@2x.webp" alt="Видео тренажерного зала">
+            <source type="image/webp" srcset="img/video-gym-desktop@1x.webp 1x, img/video-gym-desktop@1x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/video-gym-mobile@1x.jpg 1x, img/video-gym-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/video-gym-tablet@1x.jpg 1x, img/video-gym-tablet@2x.jpg 2x">
+            <img src="img/video-gym-desktop@1x.jpg" srcset="img/video-gym-desktop@2x.jpg" alt="Видео тренажерного зала">
           </picture>
 
         </div>
@@ -188,7 +194,7 @@
           <ul class="trainers__list">
             <li class="trainers__item trainers__item-1">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer1-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer1-desktop@1x.webp 1x, img/trainer1-desktop@2x.webp 2x">
                 <img src="img/trainer1-desktop@1x.jpg" srcset="img/trainer1-desktop@2x.jpg" alt="Фото тренера Анны Павловны">
               </picture>
               <p class="trainers__name">Анна Павлова <span>CrossFit</span></p>
@@ -200,7 +206,7 @@
             </li>
             <li class="trainers__item trainers__item-2">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer2-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer2-desktop@1x.webp 1x, img/trainer2-desktop@2x.webp 2x">
                 <img src="img/trainer2-desktop@1x.jpg" alt="Фото тренера Алексея Лаврова">
               </picture>
               <p class="trainers__name">Алексей Лавров <span>CrossFit</span></p>
@@ -212,7 +218,7 @@
             </li>
             <li class="trainers__item trainers__item-3">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer3-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer3-desktop@1x.webp 1x, img/trainer3-desktop@1x.webp 2x">
                 <img src="img/trainer3-desktop@1x.jpg" alt="Фото тренера Александра Пашкова">
               </picture>
               <p class="trainers__name">Александр&nbsp;Пашков <span>CrossFit</span></p>
@@ -224,7 +230,7 @@
             </li>
             <li class="trainers__item trainers__item-4">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer4-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer4-desktop@1x.webp 1x, img/trainer4-desktop@2x.webp 2x">
                 <img src="img/trainer4-desktop@1x.jpg" alt="Фото тренера Марии Кетовой">
               </picture>
               <p class="trainers__name">Мария Кетова <span>CrossFit</span></p>
@@ -236,7 +242,7 @@
             </li>
             <li class="trainers__item trainers__item-5">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer1-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer1-desktop@1x.webp 1x, img/trainer1-desktop@2x.webp 2x">
                 <img src="img/trainer1-desktop@1x.jpg" alt="Фото тренера Анны Павловны">
               </picture>
               <p class="trainers__name">Анна Павлова <span>CrossFit</span></p>
@@ -248,7 +254,7 @@
             </li>
             <li class="trainers__item trainers__item-6">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer2-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer2-desktop@1x.webp 1x, img/trainer2-desktop@2x.webp 2x">
                 <img src="img/trainer2-desktop@1x.jpg" alt="Фото тренера Алексея Лаврова">
               </picture>
               <p class="trainers__name">Алексей Лавров <span>CrossFit</span></p>
@@ -260,7 +266,7 @@
             </li>
             <li class="trainers__item trainers__item-7">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer3-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer3-desktop@1x.webp 1x, img/trainer3-desktop@2x.webp 2x">
                 <img src="img/trainer3-desktop@1x.jpg" alt="Фото тренера Александра Пашкова">
               </picture>
               <p class="trainers__name">Александр Пашков <span>CrossFit</span></p>
@@ -272,7 +278,7 @@
             </li>
             <li class="trainers__item trainers__item-8">
               <picture>
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer4-desktop@1x.webp">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/trainer4-desktop@1x.webp 1x, img/trainer4-desktop@2x.webp 2x">
                 <img src="img/trainer4-desktop@1x.jpg" alt="Фото тренера Марии Кетовой">
               </picture>
               <p class="trainers__name">Мария Кетова <span>CrossFit</span></p>
@@ -417,7 +423,10 @@
             <div class="reviews__img">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/review-mobile@1x.webp 1x, img/review-mobile@2x.webp 2x">
-                <img src="img/review-desktop@1x.webp" srcset="img/review-desktop@2x.webp" alt="Фото автора">
+                <source type="image/webp" srcset="img/review-desktop@1x.webp 1x, img/review-desktop@2x.webp 2x">
+
+                <source media="(max-width: 767px)" srcset="img/review-mobile@1x.png 1x, img/review-mobile@2x.png 2x">
+                <img src="img/review-desktop@1x.png" srcset="img/review-desktop@2x.png" alt="Фото автора">
               </picture>
             </div>
             <div class="reviews__desc">
@@ -427,7 +436,13 @@
           </li>
           <li class="reviews__item">
             <div class="reviews__img">
-              <img src="img/review-desktop@1x.png" alt="Фото автора">
+             <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/review-mobile@1x.webp 1x, img/review-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/review-desktop@1x.webp 1x, img/review-desktop@2x.webp 2x">
+
+                <source media="(max-width: 767px)" srcset="img/review-mobile@1x.png 1x, img/review-mobile@2x.png 2x">
+                <img src="img/review-desktop@1x.png" srcset="img/review-desktop@2x.png" alt="Фото автора">
+              </picture>
             </div>
             <div class="reviews__desc">
               <p class="reviews__name">Анна Орлова</p>
