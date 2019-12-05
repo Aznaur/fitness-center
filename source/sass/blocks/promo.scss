@@ -1,7 +1,7 @@
 .promo {
   display: flex;
   justify-content: space-between;
-  background-image: url('../img/header-desktop@1x.jpg');
+  background-image: url("../img/header-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: 500px 556px;
   background-position: 69.7% 0;
@@ -91,7 +91,7 @@
 
 @media (max-width: $table-width) {
   .promo {
-    background-image: url('../img/header-tablet@1x.jpg');
+    background-image: url("../img/header-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 324px 390px;
     background-position: 100% 0;

@@ -17,7 +17,7 @@
   width: 560px;
 
   background-color: #ed0233;
-  background-image: url('../img/stocks-desktop@1x.jpg');
+  background-image: url("../img/stocks-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: 280px 100%;
@@ -28,7 +28,6 @@
 }
 
 .stocks__container {
-  margin-left: 10px;
   width: 48.276%;
 }
 
@@ -59,7 +58,7 @@
     min-height: 460px;
     margin-bottom: 30px;
 
-    background-image: url('../img/stocks-tablet@1x.jpg');
+    background-image: url("../img/stocks-tablet@1x.jpg");
     background-position: 100% 0;
     background-size: 399px 100%;
 
@@ -99,7 +98,7 @@
   .stocks__best {
     min-height: 598px;
     align-items: flex-start;
-    background-image: url('../img/stocks-mobile@1x.jpg');
+    background-image: url("../img/stocks-mobile@1x.jpg");
     background-position: center bottom;
     background-size: 290px 299px;
 
