@@ -1,0 +1,219 @@
+.edge {
+  position: relative;
+}
+
+.edge__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.edge__number {
+  & p {
+    margin: 0;
+  }
+
+  & p:first-of-type {
+    display: block;
+    width: 102px;
+    height: 53px;
+    margin-bottom: 5px;
+  }
+
+  & p:last-of-type {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.edge__text {
+  & p:first-of-type {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  & p:last-of-type {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+}
+
+.edge__item {
+  position: relative;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 76px;
+
+  &:nth-of-type(odd) {
+    & .edge__text {
+      width: 205px;
+    }
+    padding-left: 30px;
+  }
+}
+
+.edge__item--parking,
+.edge__item--experience {
+  & .edge__number {
+    margin-left: 0;
+    margin-right: 31px;
+
+    & p:first-of-type {
+      width: 68px;
+    }
+  }
+
+  .edge__text {
+    width: 235px;
+  }
+}
+
+.edge__top {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 1px;
+    background-color: rgba(209, 10, 66, 0.2);
+    bottom: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 1px;
+    background-color: rgba(209, 10, 66, 0.2);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.edge__bottom {
+  & .edge__item {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+@media (max-width: $table-width) {
+  .edge__item {
+    position: relative;
+    width: 294px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 76px;
+
+    &:nth-of-type(odd) {
+      & .edge__text {
+        width: 176px;
+      }
+      padding-left: 0;
+    }
+  }
+
+  .edge__number {
+    & p {
+      margin: 0;
+    }
+
+    & p:first-of-type {
+      width: 86px;
+      height: 43px;
+      margin-bottom: 5px;
+      padding-top: 7px;
+    }
+
+    & p:last-of-type {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  .edge__top {
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .edge__item--parking,
+  .edge__item--experience {
+    width: 322px;
+
+    .edge__text {
+      width: 233px;
+    }
+
+    & .edge__number {
+      margin-left: 0;
+      margin-right: 31px;
+
+      & p:first-of-type {
+        width: 55px;
+      }
+    }
+  }
+
+  .edge__text {
+    & p:first-of-type {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .edge__item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+    text-align: center;
+    padding-bottom: 8px;
+
+    &:nth-of-type(odd) {
+      & .edge__text {
+        width: 185px;
+      }
+    }
+
+    & .edge__number {
+      margin-right: 0;
+      text-align: center;
+
+      & p:first-of-type {
+        margin-bottom: 2px;
+        padding-top: 0;
+      }
+
+      & p:last-of-type {
+        margin-bottom: 6px;
+      }
+    }
+
+    & .edge__text {
+      & p:first-of-type {
+        margin: 0;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
