@@ -1,7 +1,7 @@
 .subscription {
   background-color: #f8f9fc;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 121px;
   position: relative;
 
   &::after {
@@ -53,8 +53,8 @@
 
 @media (max-width: $table-width) {
   .subscription {
-    padding-top: 97px;
-    padding-bottom: 68px;
+    padding-top: 100px;
+    padding-bottom: 59px;
 
     &::after {
       content: "";
@@ -80,8 +80,8 @@
 
 @media (max-width: $mobile-width) {
   .subscription {
-    padding-top: 66px;
-    padding-bottom: 70px;
+    padding-top: 68px;
+    padding-bottom: 36px;
 
     &::after {
       content: "";

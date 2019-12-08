@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 86px;
-  padding-bottom: 83px;
+  padding-bottom: 85px;
   padding-left: 78px;
   background-image: url("../img/crossfit-desktop@1x.jpg");
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@
 
 @media (max-width: $table-width) {
   .news-event {
-    padding-top: 95px;
+    padding-top: 101px;
   }
 
   .news-event__text {
@@ -122,22 +122,22 @@
   .news-event__title {
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 31px;
     margin-top: 0;
   }
 
   .news-event__link {
     font-size: 10px;
     line-height: 12px;
-    padding-top: 16px;
-    padding-bottom: 9px;
+    padding-top: 11px;
+    padding-bottom: 14px;
     border: 2px solid #ffffff;
   }
 }
 
 @media (max-width: $mobile-width) {
   .news-event {
-    padding-top: 38px;
+    padding-top: 70px;
   }
 
   .news-event__text {
@@ -147,7 +147,7 @@
     background-size: 290px 292px;
     background-position: center bottom;
     padding-top: 49px;
-    padding-bottom: 347px;
+    padding-bottom: 341px;
     padding-left: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

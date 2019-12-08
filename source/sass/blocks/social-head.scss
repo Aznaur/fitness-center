@@ -5,13 +5,14 @@
 }
 
 .social-head__item {
-  margin-bottom: 9px;
+  margin-bottom: 19px;
 
   &:last-of-type {
     margin-bottom: 0;
   }
 
   & a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     color: $color-header;
