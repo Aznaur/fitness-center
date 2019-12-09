@@ -34,12 +34,13 @@
   margin-right: 40px;
   position: relative;
   cursor: pointer;
+  flex-shrink: 0;
 
   & > p {
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom: 22px;
+    bottom: 9%;
     left: 50%;
     transform: translateX(-50%);
     font-weight: bold;
