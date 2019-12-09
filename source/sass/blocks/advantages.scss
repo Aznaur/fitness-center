@@ -280,7 +280,7 @@
 @media (max-width: $mobile-width) {
   .advantages {
     padding-top: 70px;
-    padding-bottom: 62px;
+    padding-bottom: 65px;
 
     & h2 {
       font-size: 32px;
@@ -325,7 +325,7 @@
       }
 
       & p:last-of-type {
-        margin-bottom: 6px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -347,6 +347,12 @@
     margin-bottom: 46px;
     left: 0;
     top: 387px;
+
+    & p {
+      &:first-of-type {
+        margin-bottom: 9px;
+      }
+    }
   }
 
   .advantages__item--parking,

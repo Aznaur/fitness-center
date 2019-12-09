@@ -36,7 +36,7 @@
 .trainers__item {
   display: flex;
   width: 260px;
-  height: 294px;
+  height: auto;
   margin-right: 40px;
   position: relative;
   cursor: pointer;
@@ -104,7 +104,7 @@
   width: 30px;
   outline: none;
 
-  &:hover svg path{
+  &:hover svg path {
     stroke: #000000;
   }
 }
@@ -159,7 +159,7 @@
 @media (max-width: $mobile-width) {
   .trainers {
     padding-top: 69px;
-    padding-bottom: 70px;
+    padding-bottom: 64px;
     padding-left: 47px;
     padding-right: 47px;
 
@@ -175,7 +175,6 @@
 
   .trainers__slider {
     width: 226px;
-    height: 274px;
     margin: 0 auto;
     overflow: hidden;
   }

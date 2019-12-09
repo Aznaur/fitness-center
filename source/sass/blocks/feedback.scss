@@ -30,6 +30,7 @@
     box-sizing: border-box;
     height: 30px;
     color: #ffffff;
+    border-radius: 0;
   }
 
   & input::placeholder {
@@ -53,13 +54,19 @@
   padding-top: 16px;
   padding-bottom: 16px;
   color: #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #102654;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: $table-width) {
   .feedback {
     width: 100%;
     padding-top: 71px;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
     padding-left: 133px;
     padding-right: 162px;
     background-color: #102654;
@@ -85,7 +92,7 @@
 
 @media (max-width: $mobile-width) {
   .feedback {
-    padding-top: 68px;
+    padding-top: 70px;
     padding-bottom: 70px;
     padding-left: 15px;
     padding-right: 15px;

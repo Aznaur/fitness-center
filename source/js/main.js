@@ -33,7 +33,7 @@
 
   var position = 0; // положение ленты прокрутки
 
-  if (window.innerWidth < 1024) {
+  if (window.innerWidth < 1200) {
     marginRightItem = 30;
     width = document.querySelector('.trainers__item').offsetWidth + marginRightItem;
     count = 2;

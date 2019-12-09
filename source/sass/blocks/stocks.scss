@@ -124,6 +124,10 @@
 
   .stocks__container {
     flex-wrap: wrap;
+
+    & > div {
+      margin-bottom: 29px;
+    }
   }
 
   .stocks__friend,
