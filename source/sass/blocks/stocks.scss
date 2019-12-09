@@ -1,6 +1,6 @@
 .stocks {
   padding-top: 119px;
-  padding-bottom: 60px;
+  padding-bottom: 21px;
 
   & h2 {
     font-family: $Bebas-Neue;
@@ -31,10 +31,6 @@
 
   & > div {
     margin-bottom: 40px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -63,6 +59,8 @@
   }
 
   .stocks__wrapp {
+    width: 678px;
+    margin: 0 auto;
     flex-wrap: wrap;
   }
 
@@ -105,6 +103,11 @@
       font-size: 32px;
       line-height: 32px;
     }
+  }
+
+  .stocks__wrapp {
+    width: 290px;
+    margin: 0 auto;
   }
 
   .stocks__best {

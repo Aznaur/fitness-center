@@ -47,6 +47,10 @@
   color: #ffffff;
   display: block;
   margin-top: auto;
+
+  &:hover {
+    color: #ffb5b5;
+  }
 }
 
 @media (max-width: $table-width) {

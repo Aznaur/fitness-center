@@ -1,16 +1,6 @@
 .place-time {
   width: 229px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 102px;
-    background-color: #74819c;
-    right: -1px;
-    top: 6px;
-  }
 }
 
 .place-time__list {
@@ -66,28 +56,10 @@
       }
     }
   }
-
-  .place-time {
-    &::before {
-      content: "";
-      width: 1px;
-      height: 129px;
-      right: -38px;
-      top: 7px;
-    }
-  }
 }
 
 @media (max-width: $mobile-width) {
   .place-time {
     margin-bottom: 15px;
-
-    &::before {
-      content: "";
-      width: 0;
-      height: 0;
-      right: 0;
-      top: 0;
-    }
   }
 }

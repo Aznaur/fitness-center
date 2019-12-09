@@ -482,9 +482,9 @@
             <form method="post" action="#">
               <div class="feedback__wrapp-input">
                 <label class="visually-hidden" for="name-field">Имя</label>
-                <input type="text" name="name" id="name-field" placeholder="Имя">
+                <input type="text" name="name" id="name-field" placeholder="Имя" required>
                 <label class="visually-hidden" for="tel-field">Телефон</label>
-                <input type="text" name="tel" id="tel-field" placeholder="Телефон">
+                <input type="text" name="tel" id="tel-field" placeholder="Телефон" required>
               </div>
               <button type="submit" class="feedback__btn">Отправить</button>
             </form>
@@ -579,6 +579,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -2,6 +2,12 @@
 
 (function () {
   var numberOfMonths = document.querySelectorAll('.duration-list__item');
+  var element = document.querySelector('#tel-field');
+
+  var maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  var mask = IMask(element, maskOptions);
 
   for (var i = 0; i < numberOfMonths.length; i++) {
     numberOfMonths[i].addEventListener('click', function (evt) {

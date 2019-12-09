@@ -142,15 +142,18 @@
 
   .reviews__desc {
     text-align: center;
-  }
 
-  .reviews__name {
-    line-height: 26px;
-    width: 77px;
-    display: flex;
-    text-align: left;
-    margin-left: auto;
-    margin-bottom: 23px;
+    & p {
+      &:first-of-type {
+        line-height: 26px;
+        width: 77px;
+        display: flex;
+        text-align: left;
+        margin-left: auto;
+        margin-bottom: 23px;
+        word-break: break-word;
+      }
+    }
   }
 
   .reviews__arrow {

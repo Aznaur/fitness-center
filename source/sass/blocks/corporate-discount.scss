@@ -34,6 +34,10 @@
   text-transform: uppercase;
   color: #1c3374;
   display: block;
+
+  &:hover {
+    color: #8b98bd;
+  }
 }
 
 @media (max-width: $mobile-width) {

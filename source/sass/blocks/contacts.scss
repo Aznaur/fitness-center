@@ -20,10 +20,21 @@
 
 .contacts__list {
   list-style: none;
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
   padding-left: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 102px;
+    background-color: #74819c;
+    left: 50.9%;
+    top: 6px;
+  }
 }
 
 @media (max-width: $table-width) {
@@ -46,6 +57,14 @@
     width: 100%;
     padding-left: 0;
     justify-content: space-between;
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: 129px;
+      left: 58.5%;
+      top: 10px;
+    }
   }
 }
 
@@ -69,5 +88,9 @@
 
   .contacts__list {
     flex-wrap: wrap;
+
+    &::before {
+      content: none;
+    }
   }
 }
