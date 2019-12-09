@@ -1,10 +1,11 @@
 .options-list {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .options-list__item {
+  margin-right: 40px;
   padding: 7px;
   width: 31.035%;
   background-color: #ffffff;
@@ -12,6 +13,11 @@
   display: flex;
   justify-content: center;
   z-index: 2;
+  margin-bottom: 40px;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
 
   &:hover {
     background: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
@@ -120,7 +126,7 @@
 
   .options-list__btn {
     width: 49%;
-    padding-top: 25px;
+    padding-top: 24px;
   }
 }
 

@@ -80,6 +80,11 @@
   padding-top: 20px;
   padding-bottom: 19px;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .promo__social {
@@ -95,7 +100,7 @@
     background-repeat: no-repeat;
     background-size: 324px 390px;
     background-position: 100% 0;
-    padding-bottom: 107px;
+    padding-bottom: 106px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/header-tablet@2x.jpg");

@@ -19,7 +19,7 @@
   background-image: url("../img/stocks-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-size: 280px 100%;
+  background-size: 280px 462px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/stocks-desktop@2x.jpg");
@@ -28,6 +28,14 @@
 
 .stocks__container {
   width: 48.276%;
+
+  & > div {
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .stocks__friend {

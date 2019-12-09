@@ -1,5 +1,7 @@
 .best-deal {
   display: flex;
+  margin-bottom: auto;
+  min-height: 462px;
 }
 
 .best-deal__text {
@@ -48,6 +50,10 @@
 }
 
 @media (max-width: $table-width) {
+  .best-deal {
+    margin-bottom: 32px;
+  }
+
   .best-deal__text {
     width: 41%;
 
@@ -62,6 +68,7 @@
 @media (max-width: $mobile-width) {
   .best-deal {
     flex-wrap: wrap;
+    min-height: 598px;
   }
 
   .best-deal__text {

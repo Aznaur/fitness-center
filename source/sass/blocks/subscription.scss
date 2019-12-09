@@ -1,7 +1,7 @@
 .subscription {
   background-color: #f8f9fc;
   padding-top: 120px;
-  padding-bottom: 121px;
+  padding-bottom: 80px;
   position: relative;
 
   &::after {
@@ -38,7 +38,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 341px;
+  min-width: 341px;
   padding-bottom: 11px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   margin-bottom: 39px;
@@ -75,7 +75,7 @@
   }
 
   .subscription__duration {
-    width: 332px;
+    min-width: 332px;
     margin-bottom: 44px;
   }
 }
@@ -104,7 +104,7 @@
   }
 
   .subscription__duration {
-    width: 100%;
+    min-width: 100%;
     margin-bottom: 34px;
   }
 }

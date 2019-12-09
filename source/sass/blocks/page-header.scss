@@ -19,6 +19,10 @@
 
 .page-header__tel {
   letter-spacing: 0.04em;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: $table-width) {

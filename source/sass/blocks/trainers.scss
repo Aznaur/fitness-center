@@ -18,6 +18,12 @@
   }
 }
 
+.trainers__wrapp {
+  max-width: 1160px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .trainers__list {
   display: flex;
   width: 208%;
@@ -93,17 +99,22 @@
   position: absolute;
   border: none;
   background-color: transparent;
-  top: 54.5%;
+  top: 57.5%;
   cursor: pointer;
   width: 30px;
+  outline: none;
+
+  &:hover svg path{
+    stroke: #000000;
+  }
 }
 
 .trainers__arrow--prev {
-  left: 40px;
+  left: -63px;
 }
 
 .trainers__arrow--next {
-  right: 40px;
+  right: -63px;
 }
 
 @media (max-width: $table-width) {
@@ -119,6 +130,10 @@
       line-height: 42px;
       margin-bottom: 42px;
     }
+  }
+
+  .trainers__wrapp {
+    max-width: 566px;
   }
 
   .trainers__list {
@@ -137,15 +152,7 @@
   }
 
   .trainers__arrow {
-    top: 307px;
-  }
-
-  .trainers__arrow--prev {
-    left: 38px;
-  }
-
-  .trainers__arrow--next {
-    right: 38px;
+    top: 212px;
   }
 }
 
@@ -162,6 +169,10 @@
     }
   }
 
+  .trainers__wrapp {
+    max-width: 320px;
+  }
+
   .trainers__slider {
     width: 226px;
     height: 274px;
@@ -171,15 +182,15 @@
 
   .trainers__arrow {
     width: 23px;
-    top: 267px;
+    top: 201px;
   }
 
   .trainers__arrow--prev {
-    left: 8px;
+    left: -39px;
   }
 
   .trainers__arrow--next {
-    right: 8px;
+    right: -39px;
   }
 
   .trainers__item {
