@@ -37,28 +37,28 @@
     padding: 0;
     margin-bottom: 12px;
   }
-}
 
-.promo__title {
-  font-family: $Bebas-Neue;
-  font-size: 109px;
-  line-height: 109px;
-  text-align: right;
-  letter-spacing: 0.03em;
-  color: $color-header;
-  margin: 0;
-}
+  & h1 {
+    font-family: $Bebas-Neue;
+    font-size: 109px;
+    line-height: 109px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: $color-header;
+    margin: 0;
+  }
 
-.promo__subtitle {
-  position: absolute;
-  width: 113px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  color: $color-header;
-  left: -79px;
-  bottom: 15px;
+  & h2 {
+    position: absolute;
+    width: 113px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: $color-header;
+    left: -79px;
+    bottom: 15px;
+  }
 }
 
 .promo__btn {
@@ -112,19 +112,19 @@
       letter-spacing: 0.03em;
       margin-bottom: 6px;
     }
-  }
 
-  .promo__title {
-    font-size: 86px;
-    line-height: 86px;
-    letter-spacing: 0.03em;
-  }
+    & h1 {
+      font-size: 86px;
+      line-height: 86px;
+      letter-spacing: 0.03em;
+    }
 
-  .promo__subtitle {
-    font-size: 14px;
-    line-height: 21px;
-    left: -26px;
-    bottom: 5px;
+    & h2 {
+      font-size: 14px;
+      line-height: 21px;
+      left: -26px;
+      bottom: 5px;
+    }
   }
 
   .promo__text {
@@ -158,17 +158,17 @@
       letter-spacing: 0.03em;
       margin-bottom: 11px;
     }
-  }
 
-  .promo__title {
-    font-size: 78px;
-    line-height: 78px;
-    letter-spacing: 0.03em;
-  }
+    & h1 {
+      font-size: 78px;
+      line-height: 78px;
+      letter-spacing: 0.03em;
+    }
 
-  .promo__subtitle {
-    left: 0;
-    bottom: 0;
+    & h2 {
+      left: 0;
+      bottom: 0;
+    }
   }
 
   .promo__text {

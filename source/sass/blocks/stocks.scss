@@ -1,21 +1,20 @@
 .stocks {
   padding-top: 119px;
   padding-bottom: 60px;
-}
 
-.stocks__title {
-  font-family: $Bebas-Neue;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 52px;
+  & h2 {
+    font-family: $Bebas-Neue;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 52px;
+  }
 }
 
 .stocks__best {
   width: 560px;
-
   background-color: #ed0233;
   background-image: url("../img/stocks-desktop@1x.jpg");
   background-repeat: no-repeat;
@@ -47,6 +46,12 @@
 @media (max-width: $table-width) {
   .stocks {
     padding-top: 99px;
+
+    & h2 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 42px;
+    }
   }
 
   .stocks__wrapp {
@@ -65,12 +70,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/stocks-tablet@2x.jpg");
     }
-  }
-
-  .stocks__title {
-    font-size: 42px;
-    line-height: 42px;
-    margin-bottom: 42px;
   }
 
   .stocks__container {
@@ -93,6 +92,11 @@
   .stocks {
     padding-top: 70px;
     padding-bottom: 20px;
+
+    & h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 
   .stocks__best {
@@ -105,11 +109,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/stocks-mobile@2x.jpg");
     }
-  }
-
-  .stocks__title {
-    font-size: 32px;
-    line-height: 32px;
   }
 
   .stocks__container {

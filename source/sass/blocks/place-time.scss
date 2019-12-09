@@ -19,43 +19,51 @@
   padding: 0;
 }
 
-.place-time__address,
-.place-time__schedule {
-  font-size: 14px;
-  line-height: 25px;
-  margin: 0;
-  width: 170px;
-
-  & b {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
 .place-time__item {
   &:first-of-type {
     margin-bottom: 16px;
   }
-}
 
-.place-time__schedule {
-  width: 127px;
-}
+  &:last-of-type {
+    & p {
+      width: 127px;
+    }
+  }
 
-@media (max-width: $table-width) {
-  .place-time__address,
-  .place-time__schedule {
-    font-size: 18px;
-    line-height: 37px;
-    width: 218px;
-    display: flex;
-    flex-wrap: wrap;
+  & p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0;
+    width: 170px;
 
     & b {
       font-weight: bold;
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: $table-width) {
+  .place-time__item {
+    &:last-of-type {
+      & p {
+        width: 218px;
+      }
+    }
+
+    & p {
+      font-size: 18px;
+      line-height: 37px;
+      width: 218px;
+      display: flex;
+      flex-wrap: wrap;
+
+      & b {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
 

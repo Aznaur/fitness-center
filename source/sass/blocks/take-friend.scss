@@ -9,19 +9,21 @@
   padding: 27px;
   padding-right: 15px;
   background-color: #ffffff;
-}
 
-.take-friend__slogan {
-  margin: 0;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 22px;
-  margin-bottom: 10px;
-}
+  & p {
+    &:first-of-type {
+      margin: 0;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
 
-.take-friend__desc {
-  margin: 0;
-  margin-bottom: 74px;
+    &:last-of-type {
+      margin: 0;
+      margin-bottom: 74px;
+    }
+  }
 }
 
 .take-friend__link {
@@ -40,9 +42,13 @@
     margin-bottom: 0;
   }
 
-  .take-friend__desc {
-    margin-bottom: 49px;
-    width: 153px;
+  .take-friend__wrapp {
+    & p {
+      &:last-of-type {
+        margin-bottom: 49px;
+        width: 153px;
+      }
+    }
   }
 }
 
@@ -56,10 +62,12 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 41px;
-  }
 
-  .take-friend__desc {
-    width: 100%;
-    margin-bottom: 26px;
+    & p {
+      &:last-of-type {
+        width: 100%;
+        margin-bottom: 26px;
+      }
+    }
   }
 }

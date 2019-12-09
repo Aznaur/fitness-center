@@ -4,17 +4,17 @@
   padding-bottom: 69px;
   padding-right: 170px;
   box-sizing: border-box;
-}
 
-.feedback__title {
-  word-break: break-word;
-  font-family: $Bebas-Neue;
-  font-size: 49px;
-  line-height: 64px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 31px;
+  & h2 {
+    word-break: break-word;
+    font-family: $Bebas-Neue;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 31px;
+  }
 }
 
 .feedback__wrapp-input {
@@ -64,16 +64,16 @@
     padding-right: 162px;
     background-color: #102654;
 
+    & h2 {
+      width: 100%;
+      font-size: 42px;
+      line-height: 42px;
+    }
+
     & form {
       width: 100%;
       box-sizing: border-box;
     }
-  }
-
-  .feedback__title {
-    width: 100%;
-    font-size: 42px;
-    line-height: 42px;
   }
 
   .feedback__wrapp-input {
@@ -89,12 +89,12 @@
     padding-bottom: 70px;
     padding-left: 15px;
     padding-right: 15px;
-  }
 
-  .feedback__title {
-    font-size: 32px;
-    line-height: 32px;
-    margin-bottom: 32px;
+    & h2 {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 32px;
+    }
   }
 
   .feedback__wrapp-input {

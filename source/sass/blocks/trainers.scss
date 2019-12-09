@@ -7,15 +7,15 @@
   box-sizing: border-box;
   padding-left: 103px;
   padding-right: 103px;
-}
 
-.trainers__title {
-  font-family: $Bebas-Neue;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 52px;
+  & h2 {
+    font-family: $Bebas-Neue;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 52px;
+  }
 }
 
 .trainers__list {
@@ -34,6 +34,28 @@
   margin-right: 40px;
   position: relative;
   cursor: pointer;
+
+  & > p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    margin: 0;
+
+    & span {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: normal;
+      display: none;
+      color: #b6bdcc;
+    }
+  }
 
   &:hover {
     & .trainers__name {
@@ -83,28 +105,6 @@
   right: 40px;
 }
 
-.trainers__name {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
-  color: #ffffff;
-  margin: 0;
-
-  & span {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: normal;
-    display: none;
-    color: #b6bdcc;
-  }
-}
-
 @media (max-width: $table-width) {
   .trainers {
     text-align: center;
@@ -112,16 +112,16 @@
     padding-bottom: 100px;
     padding-left: 101px;
     padding-right: 101px;
+
+    & h2 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 42px;
+    }
   }
 
   .trainers__list {
     width: 9999999px;
-  }
-
-  .trainers__title {
-    font-size: 42px;
-    line-height: 42px;
-    margin-bottom: 42px;
   }
 
   .trainers__slider {
@@ -154,6 +154,11 @@
     padding-bottom: 70px;
     padding-left: 47px;
     padding-right: 47px;
+
+    & h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 
   .trainers__slider {
@@ -161,11 +166,6 @@
     height: 274px;
     margin: 0 auto;
     overflow: hidden;
-  }
-
-  .trainers__title {
-    font-size: 32px;
-    line-height: 32px;
   }
 
   .trainers__arrow {
