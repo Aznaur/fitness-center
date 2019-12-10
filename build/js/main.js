@@ -90,15 +90,16 @@
     };
   }
 
-  var reviewsWidth = 700;
+  var marginReviewsItem = 30;
+  var reviewsWidth = document.querySelector('.reviews__item').offsetWidth + marginReviewsItem;
   var reviewsCount = 1;
 
-  var reviewsList = document.querySelector('.reviews__list ');
+  var reviewsList = document.querySelector('.reviews__list');
   var reviewsListElems = document.querySelectorAll('.reviews__item');
   var reviewsPosition = 0;
 
   if (window.innerWidth < 768) {
-    reviewsWidth = 320;
+    reviewsWidth = 226 + marginReviewsItem;
     document.querySelector('.reviews__arrow--prev').onclick = function () {
       reviewsPosition += reviewsWidth * reviewsCount;
       reviewsPosition = Math.min(reviewsPosition, 0);

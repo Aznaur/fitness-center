@@ -28,6 +28,9 @@
 
 .stocks__container {
   width: 48.276%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
 
   & > div {
     margin-bottom: 40px;
