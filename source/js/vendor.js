@@ -2625,3 +2625,7 @@
     }
     var modules, installedModules;
 });
+
+var element = document.querySelector('#tel-field');
+var im = new Inputmask('9-999-9999999');
+im.mask(element);
